@@ -7,7 +7,6 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
 }
 
 .main ol {
@@ -56,28 +54,10 @@
   font-weight: 600;
 }
 
-.ctas {
+.form {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
 }
 
 a.primary {
