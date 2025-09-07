@@ -20,13 +20,12 @@ export default function Home() {
 
   useEffect(() => {
     // SDK initialization
-    if (!window?.fbAsyncInit) return
     window.fbAsyncInit = () => {
       window.FB.init({
         appId: '1822695871933811',
         autoLogAppEvents: true,
         xfbml: true,
-        version: 'v22.0',
+        version: 'v2.7',
       })
     }
 
@@ -121,7 +120,7 @@ export default function Home() {
         async
         defer
         crossOrigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js"
+        src="https://connect.facebook.net/en_US/sdk.js#version=v2.7"
       ></script>
     </>
   )
