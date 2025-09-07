@@ -1,6 +1,7 @@
 'use client'
 
 import { API_URL } from '@/constants/api.constants'
+import { MetaLoginResponse } from '@/types/meta.types'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import styles from './page.module.css'
@@ -58,7 +59,7 @@ export default function Home() {
     })
   }, [])
 
-  const fbLoginCallback = (response: any) => {
+  const fbLoginCallback = (response: MetaLoginResponse) => {
     if (response.authResponse) {
       const code = response.authResponse.code
       console.log('response: ', code) // remove after testing
